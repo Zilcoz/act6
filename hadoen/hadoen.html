@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 6 - Display Property</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+
+        .block-input{
+            display: block;
+            width: 250px;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .inline-box{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .survey-box{
+            border: 1px solid gray;
+            padding: 15px;
+            margin-top: 20px;
+            width: 500px;
+        }
+
+        .google-section{
+            margin-top: 40px;
+        }
+
+        .google-logo{
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+        }
+
+        .search-box{
+            display: block;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .signup{
+            margin-top: 50px;
+            width: 300px;
+        }
+
+        .signup input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .signup button{
+            width: 100%;
+            padding: 10px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+        }
+
+        .uber{
+            margin-top: 50px;
+            width: 300px;
+        }
+
+        .uber input{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .uber button{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 5px;
+            border: none;
+        }
+
+        .black-btn{
+            background: black;
+            color: white;
+        }
+
+        .gray-btn{
+            background: lightgray;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>1. Block Textboxes</h2>
+    <input type="text" class="block-input" placeholder="Name">
+    <input type="email" class="block-input" placeholder="Email">
+
+
+    <h2>2. Inline-Block Paragraph and Buttons</h2>
+    <div class="survey-box">
+        <p class="inline-box">
+            Thanks for chatting with our customer support.
+            Would you like to take our quick survey?
+        </p>
+
+        <button class="inline-box">Yes</button>
+        <button class="inline-box">No</button>
+    </div>
+
+
+    <h2>3. Google Search Form</h2>
+    <div class="google-section">
+        <img src="unnamed.webp" class="google-logo" alt="Google Logo">
+
+        <input type="text" class="search-box" 
+        placeholder="Search Google or type a URL">
+    </div>
+
+
+    <h2>Challenge 8d - Sign Up Form</h2>
+    <div class="signup">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+        <input type="email" placeholder="Email">
+        <button>Sign Up</button>
+    </div>
+
+
+    <h2>Challenge 8e - Uber Request Ride Form</h2>
+    <div class="uber">
+        <h3>Request a ride now</h3>
+        <input type="text" placeholder="Enter pickup location">
+        <input type="text" placeholder="Enter destination">
+
+        <button class="black-btn">Request now</button>
+        <button class="gray-btn">Schedule for later</button>
+    </div>
+
+</div>
+
+</body>
+</html>
